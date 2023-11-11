@@ -49,6 +49,23 @@ body {
 .header .containerheader img {
     width: 80px;
 }
+.header .containerheader .hastag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header .containerheader .hastag .h31 {
+    font-size: 56px;
+}
+.header .containerheader .hastag .h32 {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+}
+.header .containerheader .hastag .h32 h3 {
+    font-size: 11px;
+    font-weight: 700;
+}
 .shaffdepan {
     position: relative;
     width: 100%;
@@ -56,7 +73,7 @@ body {
     overflow: hidden;
 }
 .shaffdepan .fotodepan {
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -64,7 +81,7 @@ body {
     justify-content: center;
     background: none;
 }
-.shaffdepan .fotodepan img {
+.shaffdepan .fotodepan .foto {
     height: 100vh;
     z-index: -2;
 }
@@ -98,4 +115,55 @@ body {
 .shaffdepan .shaffnama .namacaleg h3 {
     font-size: 11px;
     font-weight: 400;
+}
+.shaffnama .bersahabat {
+    position: absolute;
+    top: -50px;
+    left: 90px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.shaffnama .bersahabat p {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--two-color);
+}
+.shaffnama .namacaleg .gif {
+    width: 100px;
+    cursor: pointer;
+    left: 25px;
+    top: -320px;
+    z-index: 2;
+}
+.shaffnama .namacaleg .mounth {
+    width: 15px;
+    position: absolute;
+    left: 53px;
+    z-index: 3;
+    top: -30px;
+}
+.navbarlubna {
+    position: absolute;
+    width: 200px;
+    background-color: var(--four-color);
+    padding: 20px;
+    top: -210px;
+    left: 100px;
+    border-radius: 20px;
+    border: solid 2px var(--five-color);
+    /* opacity: 75%; */
+    transition: 0.7s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.navbarlubna.active {
+    visibility: visible;
+    opacity: 100%;
+    transition: 0.7s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.shaffnama .namacaleg input {
+    font-size: 11px;
+    width: 100%;
 }
