@@ -27,6 +27,9 @@ body {
     display: none;
 }
 
+.loading img {
+    width: 80px;
+}
 .header {
     position: fixed;
     display: flex;
@@ -91,8 +94,9 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 30px;
-    padding: 0 30px;
+    padding: 0 20px;
     width: 100%;
+    /* background-color: #017743; */
 }
 .shaffdepan .shaffnama img {
     width: 80px;
@@ -120,29 +124,39 @@ body {
     position: absolute;
     top: -43px;
     left: 73px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 10px 20px 20px;
     border-radius: 0 20px 0 0;
     background-color: var(--four-color);
     z-index: -2;
+    transition: 0.7s ease-in-out;
+}
+.shaffnama .bersahabat.active {
+    transition: 0.7s ease-in-out;
+    transform: translatey(70px);
 }
 .shaffnama .bersahabat p {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
     color: var(--two-color);
 }
 .shaffnama .namacaleg .gif {
     width: 100px;
     cursor: pointer;
-    left: 25px;
-    top: -320px;
+    left: -40px;
+    top: -300px;
     z-index: 2;
 }
 .shaffnama .namacaleg .mounth {
     width: 15px;
     position: absolute;
     left: 53px;
-    z-index: 3;
     top: -30px;
+    transition: 0.7s ease-in-out;
+    z-index: -1;
+}
+.shaffnama .namacaleg .mounth.active {
+    transition: 0.7s ease-in-out;
+    transform: translatey(70px);
 }
 .navbarlubna {
     position: absolute;
@@ -150,19 +164,17 @@ body {
     background-color: var(--four-color);
     padding: 20px;
     top: -210px;
+    left: -37px;
     /* left: 100px; */
     border-radius: 20px;
-    border: solid 2px var(--three-color);
     /* opacity: 75%; */
     transition: 0.7s ease-in-out;
-    opacity: 0;
     visibility: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     z-index: -10;
 }
 .navbarlubna.active {
     visibility: visible;
-    opacity: 90%;
     transition: 0.7s ease-in-out;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -174,5 +186,13 @@ body {
     width: auto;
 }
 .imgshaff {
-    /* z-index: 9; */
+    transition: 0.7s ease-in-out;
+}
+.imgshaff.active {
+    transition: 0.7s ease-in-out;
+    transform: translatey(70px);
+}
+.counter {
+    position: absolute;
+    top: 0;
 }

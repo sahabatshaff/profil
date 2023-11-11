@@ -31,14 +31,13 @@
         </div>
         <div class="shaffnama" data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="namacaleg">
-                <img class="imgshaff" src="assets/img/Logo Shaff Laughing.png" alt="">
+                <img class="imgshaff" id="imgshaff" src="assets/img/Logo Shaff Laughing.png" alt="">
                 <img class="gif" src="assets/img/468737_279703db0e314d1b8beff9d5a9e4d83a~mv2.gif" alt="" id="iconhome" onclick="ToggleMenu();">
-                <img src="assets/img/1617587586_5487_gif-url.gif" alt="" class="mounth">
-                <div class="bersahabat">
-                    <p>Yuk BERSAHABAT DENGAN SHAFF !!!</p>
-                    <p>Klik Aja Love-nya</p>
+                <img src="assets/img/1617587586_5487_gif-url.gif" alt="" class="mounth" id="mounth">
+                <div class="bersahabat" id="bersahabat">
+                    <p>Yuk BERSAHABAT DENGAN SHAFF !!!, Klik Aja Love-nya</p>
                 </div>
-                <h1>Mochamad Fahmi Fauzi Hilmanudin, M.I.Kom</h1>
+                <h1>Mochamad Fahmi Fauzi<br>Hilmanudin, M.I.Kom</h1>
                 <h3>Caleg DPRD Garut DAPIL IV Cilawu, Bayongbong,<br>Cigedug, Pasirwangi, dan Samarang</h3>
                 <div class="navbarlubna" id="navbarlubna">
                     <iframe class="formisi" src="https://forms.zohopublic.com/shaffluruskan/form/SahabatShaff/formperma/xOibNp9mj7wVERVGMH4oGqQHDNGNIprUbhetjbAbVW4" frameborder="0"></iframe>
@@ -64,7 +63,9 @@
     <script src="assets/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            delay: 3000,
+        });
     </script>
 </body>
 </html>
