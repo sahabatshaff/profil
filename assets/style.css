@@ -49,7 +49,7 @@ body {
     font-weight: 700;
     font-size: 14px;
 }
-.header .containerheader img {
+.header .containerheader .golkarlogo {
     width: 80px;
 }
 .header .containerheader .hastag {
@@ -68,6 +68,17 @@ body {
 .header .containerheader .hastag .h32 h3 {
     font-size: 11px;
     font-weight: 700;
+}
+.instagram a {
+    width: 100%;
+    height: 100%;
+    /* background-color: #017743; */
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+}
+.instagram img {
+    width: 20px;
 }
 .shaffdepan {
     position: relative;
