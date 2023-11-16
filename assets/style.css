@@ -27,6 +27,39 @@ body {
     display: none;
 }
 
+.audioplayer {
+    z-index: 100;
+    background-color: var(--one-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.audioplayer.activeplay {
+    visibility: hidden;
+    transition: 1s ease-in-out;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.audioplayer img {
+    width: 70px;
+}
+button {
+    background-color: #017743;
+    color: var(--four-color);
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.introload {
+    color: var(--three-color);
+    text-align: center;
+}
 .loading img {
     width: 80px;
 }

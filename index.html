@@ -12,6 +12,15 @@
     <title>Shaff | Sahabat Haji Fahmi Fauzi </title>
 </head>
 <body>
+    <section class="audioplayer" id="audioplayer">
+        <img src="assets/img/Logo Shaff Laughing.png" alt="">
+        <h1 class="introload">Assalamualaikum, Wilujeng Sumping</h1>
+        <button id="buttonplay" onclick="PlayAudio();">MARI BERSAHABAT</button>
+        <audio autoplay loop playsinline>
+            <source src="YA LAL WATHON KH A Wahab H Aransemen Addie MS.mp3" type="audio/mp3">
+            <source src="YA-LAL-WATHON-KH-A-Wahab-H-Aransemen-Addie-MS.ogg" type="audio/ogg">
+        </audio>
+    </section>
     <section class="header">
         <div class="containerheader">
             <div class="hastag" data-aos="fade-right" data-aos-duration="1500">
@@ -65,10 +74,6 @@
             </div>
         </div>
     </section>
-    <video id="preloader-vid" autoplay loop name="media" hidden>
-        <source src="YA LAL WATHON KH A Wahab H Aransemen Addie MS.mp3" type="audio/mpeg">
-        <source src="YA-LAL-WATHON-KH-A-Wahab-H-Aransemen-Addie-MS.ogg" type="audio/ogg">
-    </video>
     <script src="assets/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -76,17 +81,5 @@
             delay: 1500,
         });
     </script>
-
-    <script>
-        var vid = document.getElementById("preloader-vid");
-        // vid.playbackRate = 1.5;
-        </script>
-        <!-- START: Mobile Autoplay Video -->
-        <script>
-            var mobilevideo = document.getElementsById("bg-vid", "preloader-vid")[0];
-            mobilevideo.setAttribute("playsinline", "");
-            // mobilevideo.setAttribute("muted", "");
-        </script>
-        <!-- END: Mobile Autoplay Video -->
 </body>
 </html>
