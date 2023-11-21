@@ -68,8 +68,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
+    z-index: 10;
 }
 .header .containerheader {
     width: 100%;
@@ -83,7 +85,7 @@ button {
     font-size: 14px;
 }
 .header .containerheader .golkarlogo {
-    width: 80px;
+    width: 60px;
 }
 .header .containerheader .hastag {
     display: flex;
@@ -91,7 +93,7 @@ button {
     gap: 5px;
 }
 .header .containerheader .hastag .h31 {
-    font-size: 56px;
+    font-size: 48px;
 }
 .header .containerheader .hastag .h32 {
     display: flex;
@@ -99,8 +101,15 @@ button {
     font-style: italic;
 }
 .header .containerheader .hastag .h32 h3 {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
+}
+.instagram {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
 }
 .instagram a {
     width: 100%;
@@ -111,7 +120,18 @@ button {
     font-weight: 700;
 }
 .instagram img {
-    width: 20px;
+    height: 15px;
+}
+.ar {
+    width: 100vw;
+    display: flex;
+    padding: 20px 0 0 20px;
+}
+.ar a {
+    cursor: pointer;
+}
+.ar img {
+    width: 35px;
 }
 .shaffdepan {
     position: relative;
