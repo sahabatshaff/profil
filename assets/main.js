@@ -11,6 +11,13 @@
       iconhome.classList.toggle('active');
       navbarlubna.classList.toggle('active');
   }
+  function ToggleImg() {
+      const navbarimg = document.getElementById('navbarimg');
+      const iconsurat = document.getElementById('iconsurat');
+
+      iconsurat.classList.toggle('active');
+      navbarimg.classList.toggle('active');
+  }
   function PlayAudio() {
       const audioplayer = document.getElementById('audioplayer');
       const buttonplay = document.getElementById('buttonplay');

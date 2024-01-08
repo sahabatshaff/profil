@@ -129,6 +129,15 @@ button {
 }
 .ar a {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
 }
 .ar img {
     width: 35px;
@@ -205,12 +214,31 @@ button {
     font-weight: 700;
     color: var(--two-color);
 }
-.shaffnama .namacaleg .gif {
-    width: 100px;
+.gif {
+    position: absolute;
+    width: auto;
     cursor: pointer;
-    left: -20px;
-    top: -270px;
-    z-index: 2;
+    left: -75px;
+    top: 50%;
+    z-index: 55;
+    background-color: var(--two-color);
+    color: var(--one-color);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    rotate: 90deg;
+}
+.gifsurat {
+    position: absolute;
+    width: auto;
+    cursor: pointer;
+    right: -45px;
+    top: 50%;
+    z-index: 54;
+    background-color: var(--two-color);
+    color: var(--one-color);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    rotate: -90deg;
 }
 .shaffnama .namacaleg .mounth {
     width: 15px;
@@ -226,30 +254,71 @@ button {
 }
 .navbarlubna {
     position: absolute;
-    width: auto;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
     background-color: var(--four-color);
-    padding: 20px;
+    /* padding: 20px;
     top: -210px;
-    left: -37px;
+    left: -37px; */
     /* left: 100px; */
     border-radius: 20px;
     /* opacity: 75%; */
     transition: 0.7s ease-in-out;
     visibility: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    z-index: 10;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    z-index: 30;
 }
 .navbarlubna.active {
     visibility: visible;
     transition: 0.7s ease-in-out;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    opacity: 90%;
+    z-index: 54;
+}
+.navbarimg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--four-color);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    transition: 0.7s ease-in-out;
+    visibility: hidden;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.navbarimg.active {
+    visibility: visible;
+    transition: 0.7s ease-in-out;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    z-index: 52;
+}
+.navbarimg H4 {
+    background-color: #017743;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+}
+.imgsurat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
 }
 .shaffnama .namacaleg input {
     font-size: 11px;
     width: 100%;
 }
 .formisi {
-    width: auto;
+    width: 100%;
+    height: 100%;
 }
 .imgshaff {
     transition: 0.7s ease-in-out;
