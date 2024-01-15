@@ -274,7 +274,7 @@ button {
     visibility: visible;
     transition: 0.7s ease-in-out;
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-    opacity: 90%;
+    opacity: 95%;
     z-index: 54;
 }
 .navbarimg {
